@@ -2,6 +2,7 @@
 You must learn these answers word by word and these programs token by token by heart to clear any React Interview
 
 ## Basic Counter App (React + Hooks)
+Make it run here: https://nextleap.app/online-compiler/reactjs-programming
 ```
 import React, { useState } from "react";
 
@@ -153,6 +154,19 @@ function TodoList() {
 
 export default TodoList;
 ```
+## Other Sample Tasks That May Be Asked:
+
+Toggle between dark/light mode using context or state.
+
+Display error/success messages after a form submit.
+
+Implement component memoization using React.memo or useMemo.
+
+Write a custom hook (e.g., for window size).
+
+Protect a Next.js page using authentication check.
+
+Code for pagination, filtering, or sorting a list.
 
 ### Reverse A string on button click (Optional) 
 
