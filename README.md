@@ -65,30 +65,6 @@ Protect a Next.js page using authentication check.
 
 Code for pagination, filtering, or sorting a list.
 
-### Reverse A string on button click (Optional) 
-
-```
-import {useState } from "react";
-export default function App() {
-   const [name, setName] = useState("Ayush");
-    const reverse = () => {
-        let reversed = "";
-        let len = name.length -1;
-        while (len>=0){
-            reversed += name[len];
-            len--;
-        }
-        setName(reversed)
-    }
-  return (
-      <div >
-          <h1>Hello {name }</h1>
-          <button onClick = {reverse}> Reverse your name</button>
-      </div>
-      );
-}
-```
-
 ## React.js Questions & Model Answers
 
 ### What are the main features of React?
