@@ -1,26 +1,3 @@
-### Next.js: Create a Static Blog Post Page (getStaticProps)
-
-```
-// pages/posts.js
-export async function getStaticProps() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5');
-  const posts = await res.json();
-  return { props: { posts } };
-}
-
-export default function Posts({ posts }) {
-  return (
-    <div>
-      <h2>Blog Posts</h2>
-      <ul>
-        {posts.map(post => <li key={post.id}>{post.title}</li>)}
-      </ul>
-    </div>
-  );
-}
-
-```
-
 ### Redux: Simple Todo List (Redux Toolkit)
 ```
 // store.js
