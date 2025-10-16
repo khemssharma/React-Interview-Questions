@@ -1,68 +1,74 @@
-# Make it run here: https://www.programiz.com/cpp-programming/online-compiler/ 
-## Reverse A String
+## Basic Programs
+Find the largest number among three numbers.
+
+Check if a number is prime.
+
+Print Fibonacci series up to N terms.
+
+Program for factorial calculation (iterative/recursive).
+
+Swap two numbers (using XOR, without temp variable).
+
+Reverse a string/array in-place.
+
+Check palindrome for string/number.
+
+Find GCD and LCM of two numbers.
+
+## Basic Web Dev
+
+What are semantic HTML elements, and why are they important?
+
+Explain relative, absolute, and fixed positioning in CSS.
+
+What’s the difference between visibility: hidden and display: none?
+
+How do media queries work in CSS?
+
+## Tips
+
+For any coding/program task: Write clean code, name variables meaningfully, and add comments when asked.
+
+Before answering, pause for 3 seconds, structure your response, and highlight practical project experiences if possible.
+
+If you forget syntax, explain your logic step-by-step; interviewers value problem-solving more than memorization.
+
+## A little CSS
+### Styled Button (HTML+CSS) 
 ```
-#include <iostream>
-using namespace std;
-int main() {
-    string str;
-    string reversed = "";
-    cout << "Enter a string: \n";
-    getline(cin, str);
-    for (int i = str.length() - 1; i >= 0;  i--){
-        reversed += str[i];
+<button class="my-btn">Click Me!</button>
+<style>
+    .my-btn {
+        background: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
     }
-    cout << reversed << endl;
-
-    return 0;
-}
-```
-
-## Check Palindrom
-
-```
-#include <iostream>
-#include <cctype>
-using namespace std;
-
-bool isPalindrom(string str){
-    int start = 0, end = str.length() -1;
-    while (start < end){
-        if (tolower(str[start++]) != tolower(str[end--])){
-            return false;
-        }
+    .my-btn:hover {
+        background: #45a049;
     }
-    return true;
-}
-
-int main() {
-    string str;
-    cout << "Enter a string to check for palindrom: \n";
-    getline(cin, str);
-    if (isPalindrom(str)){
-        cout << "It is a palindrom";
-    }else cout<< "It is not a palindrom";
-}
+</style>
 ```
-## Program to find the largest number in the array
-```
-#include <iostream>
-using namespace std;
 
-int main() {
-    int n;
-    int arr[n];
-    cout << "Enter the number of elements in the array: ";
-    cin >> n;
-    cout << "Input the numbers: ";
-    for (int i = 0; i < n; i++){
-        cin >> arr[i];
+### Responsiveness
+```
+<div class="container">
+    <div class="box">A</div>
+    <div class="box">B</div>
+</div>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
     }
-    int largest = arr[0];
-    for (int i= 1; i < n; i++){
-        if (arr[i] > largest){
-            largest = arr[i];
-        }
+    .box {
+        flex: 1 1 100px;
+        background: #ddd;
+        margin: 10px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
     }
-    cout << "Largest element is: " << largest;
-}
+</style>
 ```

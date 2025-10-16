@@ -1,3 +1,4 @@
+```
 import {useState, useEffect} from "react";
 export default function App (){
     const [name, setName] = useState("Ayush")
@@ -33,5 +34,6 @@ export default function App (){
         <button onClick = {reverse}>Reverse Name</button>
         <h4>It {isPalindrom?"is":"is not"} a palindrom.</h4>
     </div>
-    
 }
+
+```
